@@ -92,9 +92,15 @@ var finances = [
 var months = finances.length
 console.log(`The number of months is ${months}`);
 // are there any duplicates
-// if not, finances.length
 
 // calculate net amount of losses/profits
+var total = 0;
+
+for (var i=0; i < months; i++) {
+    total += finances[i][1];
+}
+console.log(`The total is $${total}`);
+
 // sum data for entire period 
 
 // total profits over time period: net total / number of months
