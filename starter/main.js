@@ -134,5 +134,13 @@ maxMonth = finances[i][0];
 maxDifference = finances[i][2];
 }
 }
-
+for (var i = 0; i < months; i++) {
+    difference += finances[i][2];
+    if (finances[i][2] < maxLoss) {
+    minMonth = finances[i][0];
+    maxLoss = finances[i][2];
+    }
+    }
 console.log(`The average is ${(difference/months).toFixed(2)}`);
+console.log(`The greatest increase in profits is: ${(maxMonth)} ${(maxDifference)}`);
+console.log(`The greatest decrease in profits is: ${(minMonth)} ${(maxLoss)}`);
