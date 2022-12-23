@@ -134,3 +134,5 @@ maxMonth = finances[i][0];
 maxDifference = finances[i][2];
 }
 }
+
+console.log(`The average is ${(difference/months).toFixed(2)}`);
