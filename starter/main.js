@@ -119,3 +119,18 @@ for (var i = 0; i < months; i++) {
         finances[i].push(finances[i][1]-finances[i-1][1]);  
     }
 }
+// calculating average and rounding up to two decimals
+var difference = 0;
+var maxMonth = 0;
+var minMonth = 0;
+var maxDifference = 0;
+var maxLoss = 0;
+
+// going through array and registering the max positive difference
+for (var i = 0; i < months; i++) {
+difference += finances[i][2];
+if (finances[i][2] > maxDifference) {
+maxMonth = finances[i][0];
+maxDifference = finances[i][2];
+}
+}
