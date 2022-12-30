@@ -87,15 +87,16 @@ var finances = [
     ['Feb-2017', 671099]
 ];
 
-// how big is the array
 
+console.log("Financial Analysis");
+console.log("----------------------------");
+
+// looking at how big the array is
 var months = finances.length
-console.log(`The number of months is ${months}`);
-// are there any duplicates
+console.log(`Total Months: ${months}`);
 
-// calculate net amount of losses/profits
 
-// sum data for entire period 
+// summming data for entire period 
 // setting initial variable as 0
 var total = 0;
 
@@ -104,8 +105,7 @@ for (var i = 0; i < months; i++) {
     total += finances[i][1];
 }
 // print total in console
-console.log(`The total is $${total}`);
-
+console.log(`Total: $${total}`);
 
 
 // total profits over time period: net total / number of months
@@ -126,9 +126,10 @@ var minMonth = 0;
 var maxDifference = 0;
 var maxLoss = 0;
 
-// going through array and registering the max positive difference
+
 for (var i = 0; i < months; i++) {
 difference += finances[i][2];
+// going through array and registering the max positive difference
 if (finances[i][2] > maxDifference) {
 maxMonth = finances[i][0];
 maxDifference = finances[i][2];
@@ -141,6 +142,6 @@ for (var i = 0; i < months; i++) {
     maxLoss = finances[i][2];
     }
     }
-console.log(`The average is ${(difference/months).toFixed(2)}`);
-console.log(`The greatest increase in profits is: ${(maxMonth)} ${(maxDifference)}`);
-console.log(`The greatest decrease in profits is: ${(minMonth)} ${(maxLoss)}`);
+console.log(`Average change: ${(difference/months).toFixed(2)}`);
+console.log(`Greatest Increase in Profits: ${(maxMonth)} ${(maxDifference)}`);
+console.log(`Greatest Decrease in Profits: ${(minMonth)} ${(maxLoss)}`);
