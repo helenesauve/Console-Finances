@@ -19,7 +19,7 @@ Given the set of data provided in the script.js file, the task was to write Java
 
 The final code looks like the below when loaded on the Console:
 
-![Screenshot](.assets/../starter/assets/images/screenshot.png)
+![Screenshot](./assets/images/screenshot.png)
 
 The live code can be found [here](https://helenesauve.github.io/Console-Finances/)
 
