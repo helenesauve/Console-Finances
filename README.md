@@ -17,7 +17,7 @@ Given the set of data provided in the script.js file, the task was to write Java
 
 * The greatest decrease in losses (date and amount) over the entire period.
 
-The final code looks like the below when loaded on the Console:
+The final code looks like the below when loaded to the Console:
 
 ![Screenshot](./assets/images/screenshot.png)
 
